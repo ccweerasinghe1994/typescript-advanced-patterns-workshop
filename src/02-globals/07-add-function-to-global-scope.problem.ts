@@ -21,7 +21,7 @@ declare global {
 	function myFunc(): boolean;
 	var myVar: number;
 }
-
+globalThis.myFunc = () => true;
 myVar = 1;
 
 it('Should let you call myFunc without it being imported', () => {
